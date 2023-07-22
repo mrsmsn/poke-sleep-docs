@@ -79,8 +79,6 @@ home --> menu
     add_friend --> facebook
  menu --> maps
 
-%% TODO:メニュー数が多すぎて途中
-
 home --> sleep
 home --> mission
 
