@@ -30,6 +30,8 @@ home[ホーム]
     add_friend[フレンド追加 - あなたの情報]
       read_qr["二次元コード読み取り\n（カメラ起動）"]
       facebook["facebook\n(inapp)"]
+    list_friend[フレンドリスト]
+  maps[マップ]
 
   %% slp_pokedex[ポケモン寝顔図鑑]
   
@@ -51,6 +53,7 @@ start --> home
 
 home --> pokemon
  pokemon --> p_team
+   p_team --> edit_team
  pokemon --> p_box
   p_box --> p_detail
 
@@ -71,10 +74,10 @@ home --> menu
  menu --> social_research
   social_research --> detail_research
   social_research --> add_friend 
-  add_friend --> read_qr
-  add_friend --> facebook
-
-%% TODO:メニュー数が多すぎて途中
+  social_research --> list_friend
+    add_friend --> read_qr
+    add_friend --> facebook
+ menu --> maps
 
 home --> sleep
 home --> mission
