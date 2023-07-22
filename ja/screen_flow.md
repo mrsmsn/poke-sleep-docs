@@ -74,8 +74,9 @@ home --> menu
  menu --> social_research
   social_research --> detail_research
   social_research --> add_friend 
-  add_friend --> read_qr
-  add_friend --> facebook
+  social_research --> list_friend
+    add_friend --> read_qr
+    add_friend --> facebook
  menu --> maps
 
 %% TODO:メニュー数が多すぎて途中
